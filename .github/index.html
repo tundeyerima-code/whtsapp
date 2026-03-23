@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Free Meta Ads Training</title>
+
+<!-- META PIXEL -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}
+(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+
+fbq('init','YOUR_PIXEL_ID');
+fbq('track','PageView');
+fbq('track','ViewContent');
+</script>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial, Helvetica, sans-serif;
+background:#f5f7fb;
+color:#222;
+}
+
+.container{
+max-width:750px;
+margin:auto;
+padding:20px;
+}
+
+.card{
+background:#fff;
+padding:22px;
+margin:18px 0;
+border-radius:12px;
+box-shadow:0 6px 18px rgba(0,0,0,0.08);
+opacity:0;
+transform:translateY(25px);
+transition:all .6s ease;
+}
+
+.show{
+opacity:1;
+transform:translateY(0);
+}
+
+h1,h2{
+text-align:center;
+}
+
+ul{
+line-height:1.9;
+}
+
+.cta{
+display:block;
+text-align:center;
+background:#25D366;
+color:white;
+padding:18px;
+font-size:19px;
+font-weight:bold;
+border-radius:10px;
+text-decoration:none;
+margin-top:15px;
+transition:.3s;
+}
+
+.cta:hover{
+background:#1ebe5d;
+}
+
+.timer{
+font-size:22px;
+font-weight:bold;
+color:#e63946;
+text-align:center;
+margin-top:10px;
+}
+
+.badge{
+background:#ffe8cc;
+padding:10px;
+border-radius:8px;
+text-align:center;
+font-weight:bold;
+margin-top:10px;
+}
+
+.testimonial{
+font-style:italic;
+margin-top:10px;
+color:#444;
+}
+
+.small{
+text-align:center;
+font-size:14px;
+color:#777;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- HERO -->
+<div class="card">
+<h1>Learn How To Run Meta Ads With Low Budget & Real Results</h1>
+<p style="text-align:center;">
+Join my FREE WhatsApp training where I show beginners how to use landing pages to reduce ad costs.
+</p>
+
+<div class="badge">🔥 Free Training — Limited Access</div>
+
+<div class="timer" id="countdown"></div>
+</div>
+
+<!-- PAIN -->
+<div class="card">
+<h2>Are You Experiencing This?</h2>
+<ul>
+<li>❌ Spending money boosting posts</li>
+<li>❌ High CPC & poor results</li>
+<li>❌ No idea how targeting works</li>
+<li>❌ Ads not converting</li>
+</ul>
+</div>
+
+<!-- VALUE -->
+<div class="card">
+<h2>What You’ll Learn Inside</h2>
+<ul>
+<li>✅ Landing page system for cheap ads</li>
+<li>✅ Smart audience targeting</li>
+<li>✅ Beginner Meta ads setup</li>
+<li>✅ Scaling without wasting money</li>
+</ul>
+</div>
+
+<!-- TRUST -->
+<div class="card">
+<h2>What Students Say</h2>
+
+<p class="testimonial">
+"I reduced my ad cost after applying this strategy." ⭐⭐⭐⭐⭐
+</p>
+
+<p class="testimonial">
+"This finally made Meta ads simple for me." ⭐⭐⭐⭐⭐
+</p>
+
+</div>
+
+<!-- CTA -->
+<div class="card">
+
+<h2>Join The Free WhatsApp Training</h2>
+
+<a href="YOUR_WHATSAPP_LINK"
+class="cta"
+onclick="fbq('track','Lead');">
+JOIN WHATSAPP CLASS NOW
+</a>
+
+<p class="small">Free access • Beginners welcome</p>
+
+</div>
+
+</div>
+
+<!-- COUNTDOWN TIMER -->
+<script>
+var countDownDate = new Date().getTime() + (60*60*1000);
+
+var x = setInterval(function() {
+var now = new Date().getTime();
+var distance = countDownDate - now;
+
+var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+document.getElementById("countdown").innerHTML =
+"Class access closes in: " + minutes + "m " + seconds + "s";
+
+if (distance < 0) {
+clearInterval(x);
+document.getElementById("countdown").innerHTML = "New Session Opening Soon";
+}
+}, 1000);
+</script>
+
+<!-- SCROLL ANIMATION -->
+<script>
+const cards = document.querySelectorAll('.card');
+
+window.addEventListener('scroll', () => {
+cards.forEach(card => {
+const rect = card.getBoundingClientRect();
+if(rect.top < window.innerHeight - 50){
+card.classList.add('show');
+}
+});
+});
+</script>
+
+</body>
+</html>
